@@ -1,11 +1,6 @@
 def add_everything_up(a, b):
     try:
-        if isinstance(a, str) and isinstance(b, str):
-            return a + b
-        elif isinstance(a, (int, float)) and isinstance(b, (int, float)):
-            return a + b
-        else:
-            return str(a) + str(b)
+        return a + b
     except TypeError:
         return str(a) + str(b)
 
